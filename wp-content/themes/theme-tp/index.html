@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondo Voyages</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="global">
+        <!-- Header -->
+        <header class="entete">
+            <div class="entete__conteneur">
+                <figure class="entete__logo">
+                    <img src="images/logo_tuto.png" alt="Mondo Voyages Logo">
+                </figure>
+    
+                <!--  MENU BURGER -->
+                <input type="checkbox" class="entete__toggle" id="menu-checkbox">
+                <label for="menu-checkbox" class="entete__burger">☰</label>
+    
+                <nav class="entete__menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link">Sport</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Pleine Nature</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Croisière</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Aventure</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Culturel</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Repos</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Économique</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Favorite</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Pays</a></li>
+                    </ul>
+                </nav>
+    
+                <form class="entete__recherche">
+                    <input type="text" placeholder="Rechercher" class="recherche__input">
+                    <button type="submit" class="recherche__btn">
+                        <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="16" height="16" alt="Rechercher">
+                    </button>
+                </form>
+            </div>
+        </header>
+    
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('images/maldives.jpg');">
+            <div class="hero__contenu">
+                <h1 class="hero__titre">Voyagez Autrement avec Mondo Voyages !</h1>
+                <p class="hero__description">
+                    Découvrez des destinations uniques et inoubliables avec Mondo Voyages. Nous vous offrons des expériences authentiques, des voyages à couper le souffle et des aventures sur mesure. Partez à la découverte du monde avec nous et créez des souvenirs impérissables.
+                </p>
+                <address class="hero__contact">
+                    <p>Email : <a href="mailto:info@cmaisonneuve.qc.ca">info@cmaisonneuve.qc.ca</a></p>
+                    <p>Téléphone : 514-254-7131</p>
+                </address>
+                <button class="hero__bouton">S'INSCRIRE</button>
+            </div>
+        </section>
+        <!-- Formulaire Section -->
+        <section class="formulaire">
+                   <form class="formulaire__contenu">
+                <div class="form__group">
+                    <label for="nom" class="form__label">Nom</label>
+                    <input type="text" id="nom" class="hero__form-input" placeholder="Écrivez votre nom">
+                </div>
+                <div class="form__group">
+                    <label for="prenom" class="form__label">Prénom</label>
+                    <input type="text" id="prenom" class="hero__form-input" placeholder="Écrivez votre prénom">
+                </div>
+                <div class="form__group">
+                    <label for="courriel" class="form__label">Courriel</label>
+                    <input type="email" id="courriel" class="hero__form-input" placeholder="Écrivez votre courriel">
+                </div>
+                <div class="form__group">
+                    <label for="telephone" class="form__label">Téléphone</label>
+                    <input type="tel" id="telephone" class="hero__form-input" placeholder="Écrivez votre téléphone">
+                </div>
+                <div class="form__group">
+                    <label for="S'INSCRIRE" class="form__label"><br></label>
+                    <input type="submit" value="S'INSCRIRE" class="hero__form-input">
+                </div>
+            </form>
+
+        </section>
+        <!-- Galerie Section -->
+        <section class="galerie">
+            <h2 class="galerie__titre">Nos destinations favorites</h2>
+            <div class="galerie__grid">
+                <figure class="galerie__fig"><img src="images/beuty-of-sae.jpg" alt="Destination 1"></figure>
+                <figure class="galerie__fig"><img src="images/bleu-water.jpg" alt="Destination 2"></figure>
+                <figure class="galerie__fig"><img src="images/maldives-lux.jpg" alt="Destination 3"></figure>
+                <figure class="galerie__fig"><img src="images/maldives-nuit-en-plage.jpg" alt="Destination 4"></figure>
+                <figure class="galerie__fig"><img src="images/maldives-plage-calm.jpg" alt="Destination 5"></figure>
+                <figure class="galerie__fig"><img src="images/maldives-voyage.jpg" alt="Destination 6"></figure>
+                <figure class="galerie__fig"><img src="images/montange.jpg" alt="Destination 7"></figure>
+                <figure class="galerie__fig"><img src="images/nature.jpg" alt="Destination 8"></figure>
+                <figure class="galerie__fig"><img src="images/plage.jpg" alt="Destination 9"></figure>
+                <figure class="galerie__fig"><img src="images/maldives-1993704.jpg" alt="Destination 10"></figure>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

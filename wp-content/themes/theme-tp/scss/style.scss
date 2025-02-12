@@ -1,0 +1,18 @@
+// Variables globales 
+@import "variables/couleurs";
+@import "variables/dimension";
+
+// Bases
+@import "base/liens";
+@import "base/simple";
+
+// Layout (structure principale)
+@import "layout/entete";
+@import "layout/hero";
+@import "layout/formulaire";
+@import "layout/general";
+
+// Composants (éléments spécifiques)
+@import "composants/menu";
+@import "composants/recherche";
+@import "composants/galerie";

@@ -1,0 +1,427 @@
+/*
+Theme Name: club-voyage
+Theme URI: https://referenced.ca
+Author: Eddy Martin
+Author URI: https://github.com/eddytuto
+Description: Thème de base développer dans le cadre du cours de Worpress
+Version: 1.0
+Tested up to: 6.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: club-voyage
+*/
+
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #d9a404;
+}
+a:focus {
+  outline: 2px solid #004f50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.entete {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.entete__conteneur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.entete__logo img {
+  max-height: 100px;
+}
+
+.entete__menu nav {
+  margin-right: 1.2rem;
+}
+
+.entete__recherche {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+
+.recherche__input {
+  border: none;
+  padding: 0.5rem;
+  width: 150px;
+}
+
+.recherche__input:focus {
+  outline: none;
+}
+
+.recherche__btn {
+  background: none;
+  border: none;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+/* Menu burger en mobile */
+.entete__toggle {
+  display: none;
+}
+
+.entete__burger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+}
+
+.entete__menu ul {
+  display: flex;
+  list-style: none;
+  gap: 0.8rem;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu__link:hover {
+  color: #004f50;
+}
+
+/* Version mobile */
+@media screen and (max-width: 768px) {
+  .entete {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .entete__conteneur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .entete__burger {
+    display: block;
+  }
+  .entete__menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  .entete__toggle:checked ~ .entete__menu {
+    display: flex;
+  }
+  .menu__item {
+    padding: 1rem;
+    display: block;
+    text-align: center;
+  }
+  .entete__recherche {
+    display: none; /* Cache la recherche sur mobile */
+  }
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/maldives.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.hero__contenu {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: left;
+}
+.hero__titre {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 7px #004f50;
+  margin-bottom: 1rem;
+}
+.hero__description {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.hero__contact {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.hero__bouton {
+  background-color: #004f50;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.hero__bouton:hover {
+  background-color: #d9a404;
+}
+
+.formulaire {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.formulaire__contenu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.formulaire .form__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.formulaire .hero__form-input {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.formulaire .form__label {
+  margin-bottom: 0.8rem;
+}
+.formulaire .form__input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.formulaire .form__submit {
+  padding: 0.75rem 2rem;
+  background-color: #004f50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.formulaire .form__submit:hover {
+  background-color: #d9a404;
+}
+
+.global {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .entete {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__contenu {
+    width: 90%;
+    padding: 1rem;
+  }
+  .formulaire__contenu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .galerie__grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.menu__item {
+  position: relative;
+}
+.menu__item__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.menu__item__link:hover {
+  color: #d9a404;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-top: 1px solid #e0e0e0;
+  }
+  .menu__item {
+    padding: 0.5rem 0;
+  }
+  .menu--open {
+    display: flex;
+  }
+}
+.recherche {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.recherche__input {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+}
+.recherche__input:focus {
+  outline: none;
+}
+.recherche__btn {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.recherche__btn img {
+  width: 20px;
+  height: 20px;
+}
+.recherche__btn:hover {
+  background-color: #004f50;
+}
+
+.galerie {
+  text-align: center;
+  max-width: 1200px;
+}
+.galerie__titre {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004f50;
+  margin-bottom: 2rem;
+}
+.galerie__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 1rem;
+}
+.galerie__fig {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  height: 100%;
+  min-height: 250px;
+}
+.galerie__fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.galerie__fig:hover {
+  transform: scale(1.05);
+}
+
+/*  Responsive */
+@media screen and (max-width: 1024px) {
+  .galerie__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 250px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .galerie__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .hero {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+  .hero__contenu {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .galerie__grid {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
