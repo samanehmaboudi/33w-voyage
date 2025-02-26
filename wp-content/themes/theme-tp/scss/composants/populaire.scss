@@ -1,0 +1,77 @@
+.populaire {
+    padding: 3rem 1.5rem;
+    background-color: #f8f9fa;
+    text-align: center;
+
+    .global {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    article {
+        flex: 1 1 300px;
+        max-width: 400px;
+    }
+
+    .carte {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+
+        &--grande {
+            width: 100%;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        &__contenu {
+            padding: 1.5rem;
+        }
+
+        &__titre {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+
+        &__description {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        &__bouton {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+
+            &--actif {
+                background-color: #0056b3;
+            }
+
+            &:hover {
+                background-color: #004085;
+            }
+        }
+    }
+}

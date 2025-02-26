@@ -1,18 +1,3 @@
-/*
-Theme Name: club-voyage
-Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
-Description: Thème de base développer dans le cadre du cours de Worpress
-Version: 1.0
-Tested up to: 6.2
-Requires PHP: 7.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: club-voyage
-*/
-
-
 a {
   text-decoration: none;
   color: #333;
@@ -291,6 +276,74 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer__contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer__texte {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.footer__nav {
+  margin-bottom: 1rem;
+}
+.footer__nav .footer__menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+.footer__nav .footer__menu li {
+  display: inline;
+}
+.footer__nav .footer__menu a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__nav .footer__menu a:hover {
+  color: #f8b400;
+}
+.footer__reseaux {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.footer__reseaux .footer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #444;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.footer__reseaux .footer__icon:hover {
+  background-color: #f8b400;
+  color: #222;
+  transform: scale(1.1);
+}
+@media (min-width: 768px) {
+  .footer__contenu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .menu {
   display: flex;
   gap: 1.5rem;
@@ -424,4 +477,70 @@ img {
   .galerie__grid {
     grid-template-columns: 1fr;
   }
+}
+.populaire {
+  padding: 3rem 1.5rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.populaire .global {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.populaire article {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+.populaire .carte {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.populaire .carte--grande {
+  width: 100%;
+}
+.populaire .carte:hover {
+  transform: translateY(-5px);
+}
+.populaire .carte__contenu {
+  padding: 1.5rem;
+}
+.populaire .carte__titre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.populaire .carte__description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  text-align: left;
+}
+.populaire .carte__bouton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.populaire .carte__bouton--actif {
+  background-color: #0056b3;
+}
+.populaire .carte__bouton:hover {
+  background-color: #004085;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,66 @@
+.populaire {
+  padding: 3rem 1.5rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.populaire .global {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.populaire article {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+.populaire .carte {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.populaire .carte--grande {
+  width: 100%;
+}
+.populaire .carte:hover {
+  transform: translateY(-5px);
+}
+.populaire .carte__contenu {
+  padding: 1.5rem;
+}
+.populaire .carte__titre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.populaire .carte__description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  text-align: left;
+}
+.populaire .carte__bouton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.populaire .carte__bouton--actif {
+  background-color: #0056b3;
+}
+.populaire .carte__bouton:hover {
+  background-color: #004085;
+}/*# sourceMappingURL=populaire.css.map */
