@@ -37,4 +37,18 @@ if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
  }
  add_action( 'pre_get_posts', 'modifie_requete_principal' );
 
+ 
+ function ajout_options()
+ {
+     // Activer le support des menus personnalisés
+     add_theme_support('menus');
+     add_theme_support('custom-logo', array(
+         'height'      => 250,
+         'width'       => 250,
+         'flex-height' => true,
+         'flex-width'  => true,
+     ));
+ }
+ add_action('after_setup_theme', 'ajout_options');
+
  ?>
