@@ -15,8 +15,8 @@ Segmenter la page en trois sections principales :
 
 -Pied de page
 
-##GitHub-page:
-https://samanehmaboudi.github.io/33w-voyage/
+##Site  sur WHC
+https://gftnth00.mywhc.ca/33w5/
 
 
 
