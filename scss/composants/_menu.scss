@@ -1,0 +1,44 @@
+.menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+    &__item {
+        position: relative;
+
+        &__link {
+            text-decoration: none;
+            color: $text-color;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: $secondary-color;
+        padding: 1rem;
+        border-top: 1px solid $border-color;
+
+        &__item {
+            padding: 0.5rem 0;
+        }
+    }
+
+    .menu--open {
+        display: flex;
+    }
+}
+

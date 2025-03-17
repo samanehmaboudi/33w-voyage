@@ -1,0 +1,132 @@
+.entete {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.entete__conteneur {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.entete__logo img {
+    max-height: 100px;
+}
+
+.entete__menu nav {
+    margin-right: 1.2rem;
+}
+
+.entete__recherche {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.recherche__input {
+    border: none;
+    padding: 0.5rem;
+    width: 150px;
+}
+
+.recherche__input:focus {
+    outline: none;
+}
+
+.recherche__btn {
+    background: none;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+/* Menu burger en mobile */
+.entete__toggle {
+    display: none;
+}
+
+.entete__burger {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+}
+
+.entete__menu ul {
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu__link:hover {
+    color: #004f50;
+}
+
+/* Version mobile */
+@media screen and (max-width: 768px) {
+    .entete {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .entete__conteneur {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .entete__burger {
+        display: block;
+    
+    }
+
+
+    .entete__menu {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .entete__toggle:checked ~ .entete__menu {
+        display: flex;
+    }
+
+    .menu__item {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+     
+    }
+
+    .entete__recherche {
+        display: none; /* Cache la recherche sur mobile */
+    }
+}

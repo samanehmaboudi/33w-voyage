@@ -1,0 +1,40 @@
+/*
+Theme Name:  theme-voyage samaneh mahboudi
+Theme URI: https://referenced.ca
+Author: Eddy Martin
+Author URI: https://github.com/samanehmahboudi
+Description:D
+éveloppement d'un de base dans le cadre du cours 33W
+Version: 1.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-voyage
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+// Variables globales 
+@import "variables/couleurs";
+@import "variables/dimension";
+
+// Bases
+@import "base/liens";
+@import "base/simple";
+
+// Layout (structure principale)
+@import "layout/entete";
+@import "layout/hero";
+@import "layout/formulaire";
+@import "layout/general";
+@import "layout/footer";
+
+// Composants (éléments spécifiques)
+@import "composants/menu";
+@import "composants/recherche";
+@import "composants/galerie";
+@import "composants/populaire";
+
