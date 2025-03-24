@@ -41,14 +41,8 @@
         <?php if(in_category('Galerie')) {
             the_content();
         } else { ?>
-        <article>
-        <div class="carte carte--grande">
-  <div class="carte__contenu">
-    <h2 class="carte__titre"><?php the_title(); ?></h2>
-    <p class="carte__description"><?php echo wp_trim_words(get_the_excerpt(), 25, "..."); ?></p>
-  </div>
-</div>
-    </article>
+<?php get_template_part("gabarits/carte");
+ ?>
     <?php } ?>
 <?php endwhile; endif; ?>
  
