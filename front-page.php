@@ -34,19 +34,37 @@
             <input type="submit" value="S'INSCRIRE" class="hero__form-input">
         </div>
     </form>
+
+    <section class="populaire">
+    <div class="global">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php if (in_category('galerie')) {
+                    the_content();
+                } else { ?>
+                    <?php get_template_part('gabarits/carte'); ?>
+                <?php } ?>
+        <?php endwhile;
+        endif; ?>
+    </div>
+</section>    
 </section>
 <section class="populaire global">
-        <div class="global">
+    <div class="global">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php if(in_category('Galerie')) {
-            the_content();
-        } else { ?>
-<?php get_template_part("gabarits/carte");
- ?>
-    <?php } ?>
-<?php endwhile; endif; ?>
- 
-        </div>
- 
-    </section>
+                <?php if (in_category('Galerie')) {
+                    the_content();
+                } else { ?>
+                    <?php get_template_part("gabarits/carte");
+                    ?>
+                <?php } ?>
+        <?php endwhile;
+        endif; ?>
+
+    </div>
+
+</section>
+<section class="destination">
+    <h2>Articles de la catégorie</h2>
+    <div id="destination__list"></div>
+</section>
 <?php get_footer(); ?>
