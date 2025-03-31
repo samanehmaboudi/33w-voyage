@@ -4,8 +4,18 @@
  */
 get_header();
 ?>
+
 <main class="site__main">
-    <section class="recherche__section">
+    <section class="recherche__section global">
+        <?php
+        global $wp_query;
+        $total_results = $wp_query->found_posts;
+        $search_query = get_search_query();
+        ?>
+
+        <h2>Résultats pour : "<?php echo esc_html($search_query); ?>"</h2>
+        <p><?php echo $total_results; ?> résultat(s) trouvé(s)</p>
+
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                 <article>
@@ -14,9 +24,24 @@ get_header();
                     <hr>
                 </article>
             <?php endwhile; ?>
+
+            <!-- Pagination -->
+            <nav class="recherche__pagination">
+                <?php
+                the_posts_pagination(array(
+                    'prev_text' => '← Précédent',
+                    'next_text' => 'Suivant →',
+                    'mid_size'  => 2,
+                ));
+                ?>
+            </nav>
         <?php else : ?>
-            <p>Aucun résultat trouvé.</p>
+            <div class="recherche__aucun-resultat">
+                <h3>Aucun résultat trouvé</h3>
+                <p>Désolé, rien ne correspond à "<?php echo esc_html($search_query); ?>". Essayez d’autres mots-clés !</p>
+            </div>
         <?php endif; ?>
     </section>
 </main>
+
 <?php get_footer(); ?>
