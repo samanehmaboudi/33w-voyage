@@ -10,6 +10,11 @@
 
 
 <section class="hero" style="background-image: url(<?php echo $hero_background ?>);">
+<style>
+        .hero_couleur {
+            color: <?php echo get_theme_mod('hero_couleur', '#000000') ?>;
+        }
+    </style>
     <div class="hero__contenu">
         <h1 class="hero__titre"><?php echo $hero_title ?></h1>
         <p class="hero__description">

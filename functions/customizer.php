@@ -49,6 +49,17 @@ function theme_tp_customize_register($wp_customize) {
             'section' => 'hero_section',
             'type'    => 'text',
         ));
+//Ajoute du couleur dans la section hero
+
+$wp_customize->add_setting('hero_couleur', array(
+    'default' => '',
+    'sanitize_callback' => 'esc_url_raw',
+));
+
+$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleur', array(
+    'label' => __('Hero Couleur', 'theme_tp'),
+    'section' => 'hero_section',
+)));
 
     // Image de fond
     $wp_customize->add_setting('hero_background', array(
