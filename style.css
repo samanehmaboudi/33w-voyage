@@ -295,71 +295,84 @@ img {
   }
 }
 .footer {
-  background-color: #222;
-  color: #fff;
-  padding: 2rem 1rem;
+  background-color: #003049;
+  color: #ffffff;
+  padding: 2rem;
   text-align: center;
 }
 .footer__contenu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .footer__texte {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
-.footer__nav {
-  margin-bottom: 1rem;
-}
-.footer__nav .footer__menu {
+.footer__menu {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
-.footer__nav .footer__menu li {
-  display: inline;
-}
-.footer__nav .footer__menu a {
-  color: #ddd;
+.footer__menu li a {
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: bold;
 }
-.footer__nav .footer__menu a:hover {
-  color: #f8b400;
+.footer__menu li a:hover {
+  color: #fcbf49;
 }
 .footer__reseaux {
   display: flex;
-  gap: 1rem;
   justify-content: center;
-  margin-top: 1rem;
+  gap: 1rem;
 }
 .footer__reseaux .footer__icon {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.footer__reseaux .footer__icon:hover {
+  color: #fcbf49;
+}
+.footer__recherche {
+  margin-top: 1rem;
+}
+.footer__recherche form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer__recherche input[type=text] {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  width: 60%;
+  max-width: 400px;
+}
+.footer__recherche button[type=submit] {
+  background-color: #fcbf49;
+  border: none;
+  color: #003049;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #444;
-  color: #fff;
-  font-size: 1.2rem;
-  transition: all 0.3s ease-in-out;
 }
-.footer__reseaux .footer__icon:hover {
-  background-color: #f8b400;
-  color: #222;
-  transform: scale(1.1);
+.footer__recherche button[type=submit] i {
+  font-size: 1rem;
 }
-@media (min-width: 768px) {
-  .footer__contenu {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.footer__recherche button[type=submit]:hover {
+  background-color: #e36414;
+  color: white;
 }
 
 .menu {
