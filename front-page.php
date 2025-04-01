@@ -26,6 +26,10 @@
 
 </section>
 
+<section>
+        <?php get_template_part('gabarits/destination'); ?>
+    </section>
+
 
 
 <?php get_footer(); ?>

@@ -1,0 +1,16 @@
+.categorie__ul{
+  list-style: none;
+  padding: 0;
+  margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.categorie__ul__li{
+  padding: 3px 4px;
+  cursor: pointer;
+  background-color: #16c4f8;
+  color: #fff;
+}
