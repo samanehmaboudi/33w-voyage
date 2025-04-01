@@ -1,6 +1,7 @@
 <?php
 function theme_tp_customize_register($wp_customize) {
-    // SECTION : Hero Section
+
+   // SECTION : Hero Section
     $wp_customize->add_section('hero_section', array(
         'title'    => __('Section Hero', 'theme_tp'),
         'priority' => 30,
