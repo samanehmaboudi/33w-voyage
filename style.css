@@ -574,4 +574,54 @@ img {
 }
 .populaire .carte__bouton:hover {
   background-color: #004085;
+}
+
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 3rem 2rem;
+  background-image: url("../images/bleu-water.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+.page-404::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.page-404 .content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+.page-404 .content h1 {
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #fcd581;
+}
+.page-404 .content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+.page-404 .content a {
+  padding: 0.75rem 1.5rem;
+  background-color: #00aaff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+.page-404 .content a:hover {
+  background-color: #0077cc;
 }/*# sourceMappingURL=style.css.map */
