@@ -1,9 +1,9 @@
 <?php
 // Récupération des valeurs du Customizer
-get_theme_mod('titre_404')
-get_theme_mod('message_404')
-get_theme_mod('background_404')
-get_theme_mod('bouton_couleur_404')
+$titre = get_theme_mod('titre_404', "Oops, vous avez échoué sur l'île 404 !");
+$message = get_theme_mod('message_404', "Pas de panique, cher membre explorateur !");
+$background = get_theme_mod('background_404');
+$couleur = get_theme_mod('couleur_bouton_404', '#ffc400');
 
 ?>
 
