@@ -1,0 +1,124 @@
+.erreur-404 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+  
+    &__contenu {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 3rem 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      max-width: 800px;
+      color: #fff;
+    }
+  
+    &__titre {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ffc400; // jaune
+      margin-bottom: 1.5rem;
+    }
+  
+    &__message {
+      font-size: 1.2rem;
+      color: #ffc400;
+      margin-bottom: 2rem;
+    }
+  
+    &__bouton {
+      display: inline-block;
+      background-color: #ffc400;
+      color: #08457e;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #e3b200;
+      }
+    }
+  
+    &__menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+  
+      a {
+        display: inline-block;
+        background-color: #ffc400;
+        color: #222;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.4rem;
+        font-size: 1.1rem;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: #e3b200;
+          color: #000;
+        }
+      }
+    }
+  
+    &__recherche {
+      input[type="text"] {
+        padding: 0.6rem;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 3px solid #ffc400;
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+  
+        &::placeholder {
+          color: #ffc400;
+          opacity: 1;
+        }
+  
+        &:focus {
+          outline: none;
+          border-color: #fcd581;
+        }
+      }
+  
+      button {
+        display: none; // tu peux l’enlever si tu veux l’avoir
+      }
+    }
+  
+    @media (max-width: 768px) {
+      &__titre {
+        font-size: 2.2rem;
+      }
+  
+      &__message {
+        font-size: 1rem;
+      }
+  
+      &__bouton {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
+  
+      &__menu {
+        flex-direction: column;
+        gap: 0.75rem;
+  
+        a {
+          font-size: 1rem;
+          padding: 0.7rem 1.2rem;
+        }
+      }
+    }
+  }
+  
