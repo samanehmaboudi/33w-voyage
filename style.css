@@ -624,4 +624,86 @@ img {
 }
 .page-404 .content a:hover {
   background-color: #0077cc;
+}
+
+.carte--grande {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carte--grande:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.carte--grande .carte__image {
+  width: 100%;
+}
+.carte--grande .carte__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.carte--grande .carte__contenu {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.carte--grande .carte__categories {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #00aaff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.carte--grande .carte__titre {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0;
+}
+.carte--grande .carte__description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.carte--grande .carte__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.carte--grande .carte__meta .carte__temperature {
+  font-size: 1rem;
+  background-color: #f0f8ff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  color: #004466;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.carte--grande .carte__liens {
+  margin-top: auto;
+  text-align: right;
+}
+.carte--grande .carte__liens .carte__lien {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.carte--grande .carte__liens .carte__lien:hover {
+  background-color: #0077cc;
 }/*# sourceMappingURL=style.css.map */
