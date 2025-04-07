@@ -1,124 +1,98 @@
 .erreur-404 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1rem;
-  
-    &__contenu {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 3rem 2rem;
-      border-radius: 1rem;
-      text-align: center;
-      max-width: 800px;
-      color: #fff;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__contenu {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #ffc400;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  &__titre {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  &__message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__bouton {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #ffc400;
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #e0aa00;
     }
-  
-    &__titre {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #ffc400; // jaune
-      margin-bottom: 1.5rem;
-    }
-  
-    &__message {
-      font-size: 1.2rem;
-      color: #ffc400;
-      margin-bottom: 2rem;
-    }
-  
-    &__bouton {
-      display: inline-block;
-      background-color: #ffc400;
-      color: #08457e;
-      font-weight: bold;
-      font-size: 1.2rem;
-      padding: 1rem 2rem;
-      margin-bottom: 2rem;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background-color: #e3b200;
-      }
-    }
-  
-    &__menu {
+  }
+
+  &__menu {
+    margin-bottom: 2rem;
+
+    .erreur-404__liste {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
-      margin-bottom: 2rem;
-  
-      a {
+      padding: 0;
+      list-style: none;
+
+      li a {
         display: inline-block;
+        padding: 0.5rem 1rem;
         background-color: #ffc400;
-        color: #222;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.4rem;
-        font-size: 1.1rem;
+        color: #000;
         text-decoration: none;
-  
-        &:hover {
-          background-color: #e3b200;
-          color: #000;
-        }
-      }
-    }
-  
-    &__recherche {
-      input[type="text"] {
-        padding: 0.6rem;
-        font-size: 1rem;
-        border: none;
-        border-bottom: 3px solid #ffc400;
-        background-color: transparent;
-        color: #fff;
-        text-align: center;
-  
-        &::placeholder {
-          color: #ffc400;
-          opacity: 1;
-        }
-  
-        &:focus {
-          outline: none;
-          border-color: #fcd581;
-        }
-      }
-  
-      button {
-        display: none; // tu peux l’enlever si tu veux l’avoir
-      }
-    }
-  
-    @media (max-width: 768px) {
-      &__titre {
-        font-size: 2.2rem;
-      }
-  
-      &__message {
-        font-size: 1rem;
-      }
-  
-      &__bouton {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-      }
-  
-      &__menu {
-        flex-direction: column;
-        gap: 0.75rem;
-  
-        a {
-          font-size: 1rem;
-          padding: 0.7rem 1.2rem;
-        }
+        font-weight: bold;
+        border-radius: 4px;
       }
     }
   }
-  
+
+  &__recherche {
+    input.erreur-404__input {
+      padding: 0.5rem 1rem;
+      border-radius: 4px 0 0 4px;
+      border: none;
+    }
+
+    .erreur-404__button {
+      padding: 0.5rem 1rem;
+      border-radius: 0 4px 4px 0;
+      border: none;
+      font-weight: bold;
+      color: #000;
+    }
+
+    // exemple SCSS
+.erreur-404__message {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+    
+
+
+  }
+}

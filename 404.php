@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<?php get_template_part('gabarits/partie', '404'); ?>
+
+
+
 <main class="site__main">
     <section class="erreur-404 global">
         <h1 class="erreur-404__titre">Oups! Cette page n'existe pas...</h1>
@@ -7,6 +11,7 @@
             Il semble que rien n'ait été trouvé à cet emplacement.<br>
             Vous pouvez revenir à la page d'accueil ou utiliser la barre de recherche ci-dessous.
         </p>
+      
 
         <div class="erreur-404__recherche">
             <?php get_search_form(); ?>

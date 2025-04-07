@@ -28,9 +28,12 @@ Le site permet maintenant d'afficher, pour chaque destination :
 
 
 
-## Lien vers le site WHC :
+## Lien vers le site WHC  de Épreuve finale:  
+
+https://gftnth00.mywhc.ca/33w5/wp-admin/customize.php?url=https%3A%2F%2Fgftnth00.mywhc.ca%2F33w5%2F
+
 
 
 ## Dépôt GitHub:  
- https://github.com/samanehmaboudi/33w-voyage/tree/tp2-1
+ https://github.com/samanehmaboudi/33w-voyage/tree/tp2-3
 
