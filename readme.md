@@ -8,7 +8,7 @@ Cette première étape du TP2 consiste à intégrer des **champs personnalisés*
 
 Le site permet maintenant d'afficher, pour chaque destination :
 - **La température minimale et maximale** (grâce au plugin ACF)
-- Une **galerie d'images personnalisée** (si disponible)
+- Une **galerie d'images personnalisée**
 - Une **page de détail individuelle** (single.php)
 - Une **carte résumée** sur les pages de catégorie
 - Une page **404 personnalisée**

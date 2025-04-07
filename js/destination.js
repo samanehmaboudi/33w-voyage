@@ -3,7 +3,7 @@
 
 
     document.addEventListener('DOMContentLoaded', function() {
-        const categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
+        const categoryId = 3; 
         const domaine = window.location.href;
         const apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${categoryId}`;
         console.log(apiUrl);
